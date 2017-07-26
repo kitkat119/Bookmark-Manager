@@ -2,8 +2,10 @@
 <ul id='links'>
   <% @links.each do |link| %>
   <li>
-    Title:  <%= link.title %>
-    URL:    <%= link.url %>
+    Title:  <%= link.title %> <br>
+    URL:    <%= link.url %> <br>
+    tags:   <%= "[#{link.tags.map(&:name).join("] [")}]" %> <br>
+    <br>
   </li>
   <% end %>
  </ul>
