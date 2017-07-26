@@ -1,6 +1,6 @@
 ENV['RACK_ENV'] = 'test'
 
-require 'pry'
+# require 'pry'
 require 'capybara/rspec'
 require 'capybara'
 require 'rspec'
