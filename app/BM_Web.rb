@@ -8,5 +8,9 @@ class BMWeb < Sinatra::Base
     erb :'links/index'
   end
 
+  get '/link_new' do
+    erb :link_new
+  end
+
   run! if app_file == $0
 end
