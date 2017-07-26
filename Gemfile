@@ -15,4 +15,5 @@ group :test do
   gem 'rubocop'
   gem 'simplecov', require: false
   gem 'simplecov-console', require: false
+  gem 'database_cleaner'
 end
