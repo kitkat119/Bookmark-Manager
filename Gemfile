@@ -7,6 +7,7 @@ gem 'data_mapper'
 gem 'dm-postgres-adapter'
 gem 'rake'
 gem 'sinatra'
+gem 'database_cleaner'
 
 group :test do
   gem 'pry'
@@ -15,5 +16,5 @@ group :test do
   gem 'rubocop'
   gem 'simplecov', require: false
   gem 'simplecov-console', require: false
-  gem 'database_cleaner'
+
 end
