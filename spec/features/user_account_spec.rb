@@ -7,5 +7,7 @@ feature 'user can sign up to an account' do
 
   scenario 'user cannot create an account with the incorrect password' do
     expect { sign_up(password_confirmation: 'exanple') }.not_to change(User, :count)
+    expect(current_path).to eq('/users')
+    expect(page).to have_content 'Your password and confirmation password do not match'
   end
 end
