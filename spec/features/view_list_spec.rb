@@ -8,7 +8,7 @@ feature "view the list of bookmarks" do
     end
   end
 
-  scenario 'filter links by the bubble tag' do
+  scenario 'filter links by a tag name' do
     visit('/links')
     click_link 'Add bookmark'
     fill_in :url, with: 'www.bubbles.com'
