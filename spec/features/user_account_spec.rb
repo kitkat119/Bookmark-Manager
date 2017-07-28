@@ -4,4 +4,8 @@ feature 'user can sign up to an account' do
     expect(page).to have_content "Welcome, example@example.com"
     expect(User.first.email).to eq 'example@example.com'
   end
+
+  scenario 'user cannot create an account with the incorrect password' do
+    expect { sign_up(password_confirmation: 'exanple') }.not_to change(User, :count)
+  end
 end
