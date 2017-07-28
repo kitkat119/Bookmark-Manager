@@ -7,12 +7,14 @@
   Tags:  <% link.tags.each do |tag| %>
       <%= tag.name %>
      <% end %>
-    <br>
+    <br></br>
   </li>
   <% end %>
  </ul>
 
  <a href="/links/new">Add bookmark</a>
+ <br></br>
+ <a href="/users/new">Sign up</a>
  <br></br>
  <form action="/links/bubbles" method="post">
    <label for="search">
