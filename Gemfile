@@ -10,7 +10,6 @@ gem 'sinatra'
 gem 'database_cleaner'
 
 group :test do
-  # gem 'pry'
   gem 'capybara'
   gem 'rspec'
   gem 'rubocop'

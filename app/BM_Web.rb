@@ -22,5 +22,11 @@ class BMWeb < Sinatra::Base
       redirect '/links'
   end
 
+  post '/links/bubbles' do
+    @tag = Tag.first(name: params[:search])
+    @links = @tag ? @tag.links : []
+    erb :'links/bubbles'
+  end
+
   run! if app_file == $0
 end
